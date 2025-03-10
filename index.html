@@ -3274,6 +3274,11 @@
 		transform: matrix(1,0,0,1,0,0);
 	}
 </style>
+<script>
+	if (!localStorage.getItem("loggedIn")) {
+		window.location.href = "login.html";
+	}
+</script>
 <script id="applicationScript">
 if (window.console==null) { window["console"] = { log : function() {} } }; // some browsers do not set console
 
